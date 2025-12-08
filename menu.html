@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Delicias Dulces</title>
+    <meta name="description" content="Descubre los mejores postres artesanales en Delicias Dulces. Pasteles, cupcakes, macarons y más, hechos con amor.">
+    <meta name="keywords" content="pastelería, postres, pasteles, cupcakes, macarons, artesanal">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="Index.html" class="nav-logo"><strong>Pavella's</strong></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="Index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#catalogo" class="nav-link">Postres</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="nosotros" class="container">
+            <h2 class="section-title">Nuestra  Historia</h2>
+            <p>En Delicias pave, cada postre es una obra de arte.
+                 Nacimos de la pasión por la repostería fina, 
+                 utilizando solo ingredientes de la más alta calidad para 
+                 crear sabores inolvidables. Nuestra misión es llevar alegría a 
+                 tu paladar con creaciones únicas y artesanales.</p>
+        </section>
+        <section id="catalogo" class="container">
+            <h2 class="section-title">Nuestro Catálogo</h2>
+            <div id="filtros-categoria" class="filtros">
+                <!-- Botones de filtro generados por JS -->
+            </div>
+            <div id="catalogo-postres" class="catalogo-grid">
+                <!-- Tarjetas de postres generadas por JS -->
+            </div>
+        </section>
+
+        
+        <section id="servicios" class="container">
+            <h2 class="section-title">Servicios Especiales</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Pasteles Personalizados</h3>
+                    <p>Diseñamos el pastel de tus sueños para cualquier celebración.</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Pedidos Especiales</h3>
+                    <p>Mesas de dulces y postres temáticos para tus eventos.</p>
+                </div>
+                <div class="servicio-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Catering Dulce</h3>
+                    <p>Llevamos nuestra selección de postres a tus reuniones y fiestas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                <div id="form-feedback"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Horario: Lunes a Sábado de 9am a 8pm</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/tu-pagina" target="_blank" title="Síguenos en Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tu-perfil" target="_blank" title="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/1234567890" target="_blank" title="Contáctanos por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Delicias Dulces. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botones Flotantes -->
+    <button id="btnTop" class="btn-flotante btn-top" title="Volver Arriba"><i class="fas fa-arrow-up"></i></button>
+    <a href="https://wa.me/1234567890" target="_blank" class="btn-flotante btn-whatsapp" title="Contactar por WhatsApp"><i class="fab fa-whatsapp"></i></a> <!-- Este te llevará a WhatsApp -->
+
+    <!-- Modal para detalles del postre -->
+    <div id="modal-postre" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="Imagen del postre">
+            <h3 id="modal-nombre"></h3>
+            <p id="modal-descripcion"></p>
+            <p id="modal-precio"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
