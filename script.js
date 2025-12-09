@@ -173,5 +173,4 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         console.warn('El formulario de contacto con id "contact-form" no fue encontrado.');
     }
-
 });
